@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { GlobalStyle } from './BasicStyles/GlobalStyle';
 import { Layout } from './Layout/Layout';
 
@@ -63,18 +63,3 @@ export class App extends Component {
     );
   }
 }
-
-//ще один варіант розмітки
-
-/* <h2>Statistics</h2>
-    <ul>
-      {Object.entries(this.state).map(name => (
-        <li key={name[0]}>
-          {name[0]} : {name[1]}
-        </li>
-      ))}
-    </ul>
-    <p>Total: {this.countTotalFeedback(this.state)}</p>
-    <p>
-      Positive feedback: {this.countPositiveFeedbackPercentage(this.state)}%
-    </p> */
